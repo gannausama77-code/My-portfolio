@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,21 +11,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 Ganna<span>.</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -37,6 +44,14 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#training">Training</a>
                     </li>
 
                     <li class="nav-item">
@@ -63,6 +78,7 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-7">
+
                     <p class="hero-subtitle">HELLO, I'M</p>
 
                     <h1>
@@ -76,6 +92,7 @@
                     </p>
 
                     <div class="hero-buttons">
+
                         <a href="#projects" class="btn btn-primary-custom">
                             View My Work
                         </a>
@@ -84,10 +101,12 @@
                             Contact Me
                         </a>
 
-                        <a href="files/Ganna-Usama-CV.pdf" class="btn btn-outline-custom" download>
+                        <a href="files/Ganna-Usama-CV.pdf"
+                            class="btn btn-outline-custom" download>
                             <i class="fa-solid fa-download"></i>
                             Download CV
                         </a>
+
                     </div>
                 </div>
 
@@ -121,6 +140,7 @@
 
                 <div class="col-lg-7">
                     <div class="about-content">
+
                         <h3>I'm Ganna Usama</h3>
 
                         <p>
@@ -140,10 +160,65 @@
                             I'm always excited to take on new
                             challenges and grow as a developer.
                         </p>
+
                     </div>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+
+            <div class="section-heading">
+                <p>MY ACADEMIC BACKGROUND</p>
+                <h2>My <span>Education</span></h2>
+            </div>
+
+            <div class="education-card">
+
+                <div class="education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="education-info">
+                    <h3>Bachelor of Computer Science</h3>
+                    <h4>Arab Open University</h4>
+                    <p>Currently Studying</p>
+                    <span>Relevant Coursework: Java, Python</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="training-section" id="training">
+        <div class="container">
+
+            <div class="section-heading">
+                <p>MY PROFESSIONAL JOURNEY</p>
+                <h2>My <span>Training</span></h2>
+            </div>
+
+            <div class="training-card">
+
+                <div class="training-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="training-info">
+                    <h3>Front-End Web Development Track</h3>
+                    <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
+                    <p>July 2026 – Present</p>
+                    <span>HTML, CSS, JavaScript, React</span>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -190,6 +265,22 @@
                     </div>
                 </div>
 
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React</h4>
+                        <p>Learning to build interactive user interfaces.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>Git & GitHub</h4>
+                        <p>Version control and managing projects.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -205,14 +296,15 @@
 
             <div class="row g-4">
 
-                <!-- Project 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="project-card">
+
                         <div class="project-image">
-                            <img src="images/mednova.png" alt="MedNova Project">
-                        </div>
+    <img src="images/mednova-cover.png" alt="MedNova Project Cover">
+</div>
 
                         <div class="project-info">
+
                             <h4>MedNova</h4>
 
                             <span class="project-type">Demo Project</span>
@@ -225,57 +317,23 @@
 
                             <span>HTML | CSS | Bootstrap | JavaScript</span>
 
-                            <a href="https://gannausama77-code.github.io/MedNova/" class="project-link" target="_blank"
+                            <a href="https://gannausama77-code.github.io/MedNova/"
+                                class="project-link"
+                                target="_blank"
                                 rel="noopener noreferrer">
+
                                 View Live Demo
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                             </a>
-                        </div>
 
-                        <!-- Project 2 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/news.png" alt="US News Project">
-                                </div>
-
-                                <div class="project-info">
-                                    <h4>US News</h4>
-                                    <p>
-                                        A news website that displays
-                                        the latest headlines using an API.
-                                    </p>
-                                    <span>HTML | CSS | JavaScript | API</span>
-                                    <a href="https://gannausama77-code.github.io/US-News/" class="project-link"
-                                        target="_blank" rel="noopener noreferrer">
-                                        View Live Project
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Project 3 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="project-card">
-                                <div class="project-image">
-                                    <img src="images/notes.png" alt="Notes App Project">
-                                </div>
-
-                                <div class="project-info">
-                                    <h4>Notes App</h4>
-                                    <p>
-                                        A simple application for creating
-                                        and managing personal notes.
-                                    </p>
-                                    <span>HTML | CSS | JavaScript | JSON Server</span>
-                                    <a href="#" class="project-link">View Project</a>
-                                </div>
-                            </div>
                         </div>
 
                     </div>
                 </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -304,21 +362,37 @@
                         <span>gannausama77@gmail.com</span>
                     </a>
 
-                    <a href="https://wa.me/201271595724" target="_blank" class="contact-item">
+                    <a href="https://wa.me/201271595724"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item">
+
                         <i class="fa-brands fa-whatsapp"></i>
                         <span>WhatsApp</span>
+
                     </a>
 
                 </div>
 
+                <!-- Social Links -->
                 <div class="social-links">
 
-                    <a href="https://www.linkedin.com/in/ganna-usama-69980b407/" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ganna-usama-69980b407/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
                         <i class="fa-brands fa-linkedin-in"></i>
+
                     </a>
 
-                    <a href="https://github.com/gannausama77-code" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/gannausama77-code"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+
                         <i class="fa-brands fa-github"></i>
+
                     </a>
 
                 </div>
@@ -336,11 +410,15 @@
             <p>Turning ideas into creative digital experiences.</p>
 
             <div class="footer-links">
+
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#training">Training</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
+
             </div>
 
             <div class="footer-line"></div>
@@ -352,7 +430,6 @@
         </div>
     </footer>
 
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -360,5 +437,4 @@
     <script src="js/script.js"></script>
 
 </body>
-
 </html>
